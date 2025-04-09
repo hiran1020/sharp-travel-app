@@ -1,3 +1,10 @@
 # https://www.robotstxt.org/robotstxt.html
+# Allow all crawlers
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap location
+Sitemap: https://sharptravel.com/sitemap.xml
+
+# Prevent crawling of search results
+Disallow: /search?*

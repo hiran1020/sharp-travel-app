@@ -1,0 +1,39 @@
+.why-choose-us {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.reason {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.reason i {
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.reason h3 {
+    margin-bottom: 0.7rem;
+    color: #333;
+}
+
+.reason p {
+    color: #555;
+}
