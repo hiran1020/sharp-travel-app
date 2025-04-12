@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import FeaturedDestinations from '../components/FeaturedDestinations';
+import FeaturedPackages from '../components/FeaturedPackages';
 import FeaturedTours from '../components/FeaturedTours';
 import WhyChooseUs from '../components/WhyChooseUs';
 import SEO from '../components/SEO';
@@ -18,6 +19,7 @@ function HomePage() {
       <Hero />
       <FeaturedDestinations />
       <FeaturedTours />
+      <FeaturedPackages />
       <WhyChooseUs />
     </>
   );

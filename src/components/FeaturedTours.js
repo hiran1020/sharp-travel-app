@@ -9,7 +9,7 @@ function FeaturedTours() {
       <div className="container">
         <h2>Our Popular Tours</h2>
         <div className="tour-list">
-          {tours.map((tour) => (
+          {tours.slice(0,4).map((tour) => (
             <div key={tour.id} className="tour-item">
               <img src={tour.image} alt={tour.name} />
               <div className="tour-details">

@@ -9,7 +9,7 @@ function FeaturedDestinations() {
       <div className="container">
         <h2>Explore Our Top Destinations</h2>
         <div className="destination-grid">
-          {destinations.map((destination) => (
+          {destinations.slice(0,6).map((destination) => (
             <div key={destination.id} className="destination-card">
               <img src={destination.image} alt={destination.name} />
               <div className="card-content">
