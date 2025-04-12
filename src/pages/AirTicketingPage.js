@@ -3,11 +3,15 @@ import { Link } from 'react-router-dom';
 import './AirTicketingPage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlane, faClock, faCheckCircle, faInfoCircle, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import FeatureFlightDetails from '../components/FeatureFlightDetails';
+
 
 const AirTicketingPage = () => {
   const [activeTab, setActiveTab] = useState('national');
 
   return (
+    <>
+    
     <div className="air-ticketing-page">
       <div className="container">
         <h1>Air Ticketing Services</h1>
@@ -243,6 +247,13 @@ const AirTicketingPage = () => {
         </div>
       </div>
     </div>
+    <div className="Today's Flight Details">
+      <h2>Today's Flight Details</h2>
+      <div className="flight-details">
+        <FeatureFlightDetails />
+        </div>
+        </div>
+    </>
   );
 };
 

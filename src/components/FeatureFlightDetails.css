@@ -1,0 +1,302 @@
+/* Wrapper */
+.wrapper {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #f9fafb;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    animation: fadeIn 0.6s ease-in;
+  }
+  
+  /* Heading */
+  .heading {
+    text-align: center;
+    color: #222;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  /* Tab Bar */
+  .tabBar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    gap: 12px;
+  }
+  
+  /* Tab Button */
+  .tabButton {
+    padding: 10px 22px;
+    background: #e4e6eb;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+  
+  /* Active Tab */
+  .activeTab {
+    background-color: #1a237e;
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Search Box */
+  .searchBox {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Input Field */
+  .input {
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 60%;
+    max-width: 420px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Table Wrapper */
+  .tableWrapper {
+    overflow-x: auto;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+  }
+  
+  /* Table */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Table Header */
+  .tableHeader {
+    background-color: #1a237e;
+    color: #fff;
+    text-align: left;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .tableHeaderInfo {
+    padding: 12px 18px;
+    border-bottom: 2px solid #ddd;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Table Row */
+  .tableRow {
+    transition: background-color 0.2s;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    &:hover {
+      background-color: #f1f3f5;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  
+  /* Table Row Hover */
+  .tableRowHover:hover {
+    background-color: #4e6781;
+  }
+  
+  /* Table Cell */
+  .tableCell {
+    padding: 12px 18px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #333;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+  }
+  
+  /* Last Table Cell */
+  .tableCellLast {
+    border-bottom: none;
+  }
+  
+  /* Highlight nearest upcoming flight with a yellow border */
+  .highlight {
+    border: 2px solid #ffeb3b; /* Yellow border */
+    font-weight: bold;
+    color: #333;
+  }
+
+  
+
+  /* Zebra Stripes (Alternating Row Colors) */
+  .tableRow:nth-child(even) {
+    background-color: #bec6ce;
+  }
+
+  .tableRow:nth-child(odd) {
+    background-color: #fff;
+  }
+
+  /* No Results */
+  .noResult {
+    text-align: center;
+    padding: 15px;
+    color: #777;
+    font-size: 1rem;
+  }
+  
+  /* Error */
+  .error {
+    text-align: center;
+    padding: 30px;
+    font-size: 18px;
+    color: #c00;
+  }
+  
+  /* Loader */
+  .loaderWrapper {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  /* Loading Text */
+  .loadingText {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Spinner */
+  .spinner {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border: 6px solid #e4e6eb;
+    border-top: 6px solid #1a237e;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Keyframes */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Status Badge */
+  .statusBadge {
+    display: inline-block;
+    padding: 6px 15px;
+    border-radius: 14px;
+    font-size: 0.85rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 5px 0;
+  }
+  
+  /* Different Status Colors */
+  .statusLanded {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .statusDeparted {
+    background-color: #1a237e;
+    color: #fff;
+  }
+  
+  .statusDelayed {
+    background-color: #ffc107;
+    color: #fff;
+  }
+  
+  .statusCancelled {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .statusBoardingCompleted {
+    background-color: #28a777;
+    color: #fff;
+  }
+  
+  .statusSecurityCheck {
+    background-color: #ff7f50;
+    color: #fff;
+  }
+  
+  .statusLastCall {
+    background-color: #e63946;
+    color: #fff;
+  }
+  
+  .statusCheckIn {
+    background-color: #1e90ff;
+    color: #fff;
+  }
+  
+  .headerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .clockLeft {
+    flex: 1;
+    min-width: 150px;
+  }
+  
+  .rightSection {
+    flex: 3;
+    min-width: 300px;
+  }
+  
+  .tabBar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .searchBox {
+    margin-top: 5px;
+  }
+  

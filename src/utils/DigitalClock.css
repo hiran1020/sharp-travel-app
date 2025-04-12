@@ -1,0 +1,37 @@
+.clockContainer {
+    display: flex;
+    justify-content: left;
+    margin: 20px 0;
+  }
+  
+  .clock {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 40px;
+    border-radius: 15px #1a237e;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    color: #1a237e;
+    text-align: center;
+    user-select: none;
+    transition: all 0.3s ease;
+  }
+  
+  .clock:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  }
+  .toggleButton {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .toggleButton:hover {
+    background: #0056b3;
+  }
