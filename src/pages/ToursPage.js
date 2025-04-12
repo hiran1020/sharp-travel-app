@@ -23,7 +23,7 @@ function ToursPage() {
                 <p>{tour.description}</p>
                 <div className="tour-meta">
                   <span>Duration: {tour.duration}</span>
-                  <span>Price: ${tour.price}</span>
+                  <span>Price: ${tour.details.price.perPerson}</span>
                 </div>
                 <Link to={`/tours/${tour.id}`} className="button">
                   View Details

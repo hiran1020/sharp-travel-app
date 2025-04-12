@@ -83,6 +83,15 @@ function Header() {
               </li>
               <li className="nav-item">
                 <Link 
+                  to="/packages" 
+                  className={`nav-link ${isActive('/packages') ? 'active' : ''}`}
+                  onClick={closeMenu}
+                >
+                  Packages
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link 
                   to="/air-ticketing" 
                   className={`nav-link ${isActive('/air-ticketing') ? 'active' : ''}`}
                   onClick={closeMenu}

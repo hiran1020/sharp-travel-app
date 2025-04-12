@@ -1,0 +1,176 @@
+.tourPackage-details-page {
+    padding: 80px 0;
+    background-color: #f5f9ff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .tourPackage-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .tourPackage-header h1 {
+    color: #1a237e;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .tourPackage-meta {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .meta-item {
+    display: flex;
+    align-items: center;
+    color: #546e7a;
+  }
+  
+  .meta-item i {
+    color: #2196f3;
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .tourPackage-image {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tourPackage-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .tourPackage-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+  }
+  
+  .tourPackage-description,
+  .tourPackage-itinerary,
+  .tourPackage-includes,
+  .tourPackage-price {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .tourPackage-description h2,
+  .tourPackage-itinerary h2,
+  .tourPackage-includes h2,
+  .tourPackage-price h2 {
+    color: #1a237e;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  
+  .tourPackage-description p {
+    color: #546e7a;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .tourPackage-itinerary ul,
+  .tourPackage-includes ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tourPackage-itinerary li,
+  .tourPackage-includes li {
+    color: #546e7a;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .tourPackage-itinerary li:before,
+  .tourPackage-includes li:before {
+    content: '✓';
+    color: #2196f3;
+    position: absolute;
+    left: 0;
+    top: 10px;
+  }
+  
+  .price-details {
+    margin-bottom: 20px;
+  }
+  
+  .price-details p {
+    color: #546e7a;
+    margin-bottom: 10px;
+  }
+  
+  .book-now-btn {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .book-now-btn:hover {
+    background-color: #1976d2;
+  }
+  
+  @media (max-width: 992px) {
+    .tourPackage-content {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .tourPackage-header h1 {
+      font-size: 2rem;
+    }
+  
+    .tourPackage-meta {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .tourPackage-image {
+      height: 350px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tourPackage-header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .tourPackage-image {
+      height: 250px;
+    }
+  
+    .tourPackage-description,
+    .tourPackage-itinerary,
+    .tourPackage-includes,
+    .tourPackage-price {
+      padding: 20px;
+    }
+  } 

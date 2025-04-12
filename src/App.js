@@ -13,7 +13,8 @@ import AboutPage from './pages/AboutPage';
 import Contact from './pages/Contact';
 import AirTicketingPage from './pages/AirTicketingPage';
 import './App.css'; // You can add global styles here
-
+import PackagesPage from './pages/PackagesPage';
+import TourPackageDetailsPage from './pages/PackagesDeatilsPage'
 function App() {
   return (
     <HelmetProvider>
@@ -27,6 +28,8 @@ function App() {
               <Route path="/destinations/:id" element={<DestinationDetailsPage />} />
               <Route path="/tours" element={<ToursPage />} />
               <Route path="/tours/:id" element={<TourDetailsPage />} />
+              <Route path="/packages" element={<PackagesPage />} />
+              <Route path="/packages/:id" element={<TourPackageDetailsPage />} />
               <Route path="/services" element={<ServicesPage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<Contact />} />

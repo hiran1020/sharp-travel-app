@@ -74,6 +74,14 @@ const DestinationDetailsPage = () => {
               <li>Difficulty level: {destination.details.difficulty || 'Moderate'}</li>
             </ul>
           </div>
+          <div className="travel-price">
+            <h2>Price Range</h2>
+            <ul>
+              <li>Best budget cost : ${destination.details.price.budget} per person</li>
+              <li>Recommended midRange cost: ${destination.details.price.midRange} per person</li>
+              <li>Most luxury cost: ${destination.details.price.luxury} per person</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

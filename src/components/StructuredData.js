@@ -58,6 +58,25 @@ export const TourSchema = ({ tour }) => {
 
   return <StructuredData data={data} />;
 };
+// Packages schema
+export const PackageSchema = ({ tourPackage }) => {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    "name": tourPackage.name,
+    "description": tourPackage.description,
+    "image": tourPackage.image,
+    "url": `https://sharptravel.com/tours/${tourPackage.id}`,
+    "tourBookingPage": `https://sharptravel.com/tours/${tourPackage.id}`,
+    "priceRange": `$${tourPackage.details.price.perPerson}`,
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "NP"
+    }
+  };
+
+  return <StructuredData data={data} />;
+};
 
 // Destination schema
 export const DestinationSchema = ({ destination }) => {

@@ -46,10 +46,6 @@ const TourDetailsPage = () => {
         </div>
 
         <div className="tour-content">
-          <div className="tour-description">
-            <h2>About This Tour</h2>
-            <p>{tour.description}</p>
-          </div>
 
           <div className="tour-itinerary">
             <h2>Itinerary</h2>
@@ -68,6 +64,12 @@ const TourDetailsPage = () => {
               ))}
             </ul>
           </div>
+
+          <div className="tour-description">
+            <h2>About This Tour</h2>
+            <p>{tour.description}</p>
+          </div>
+
 
           <div className="tour-price">
             <h2>Price Information</h2>
