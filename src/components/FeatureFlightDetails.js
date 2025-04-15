@@ -9,10 +9,10 @@ const FeatureFlightDetails = () => {
   const [activeTab, setActiveTab] = useState('international_arrivals');
   const [searchTerm, setSearchTerm] = useState('');
   const [is24Hour, setIs24Hour] = useState(true);
-  const [currentTime, setCurrentTime] = useState(new Date());
+  const [setCurrentTime] = useState(new Date());
 
   const proxyURL = `https://api.allorigins.win/raw?url=${encodeURIComponent(
-    'https://www.tiairport.com.np/flight_details'
+    ''
   )}`;
 
   useEffect(() => {
